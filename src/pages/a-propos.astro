@@ -1,0 +1,140 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import PageHero from '../components/PageHero.astro';
+import Footer from '../components/Footer.astro';
+
+import plombierImg from '../assets/images/plombier-travail.jpg';
+import chantierImg from '../assets/images/chantier-plomberie.jpg';
+---
+
+<Layout title="L'entreprise — Duval Plomberie">
+  <Header />
+  <main>
+    <PageHero title="L'entreprise" subtitle="Qui sommes-nous ?" />
+
+    <section class="bg-mist py-20 md:py-28">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center gap-12 mb-20">
+          <div class="md:w-1/2">
+            <h2 class="font-heading text-2xl md:text-3xl font-bold mb-6">Un métier de famille</h2>
+            <p class="text-steel leading-relaxed mb-4">
+              Pierre Duval est plombier-chauffagiste de père en fils. Après avoir appris le métier
+              aux côtés de son père pendant 10 ans, il a créé Duval Plomberie en 2010
+              avec une conviction : un artisan doit être proche de ses clients.
+            </p>
+            <p class="text-steel leading-relaxed">
+              Installé à Grenoble, Pierre intervient sur toute l'agglomération avec
+              réactivité et professionnalisme. Son credo : un travail bien fait du premier coup,
+              un chantier propre, et un client informé à chaque étape.
+            </p>
+          </div>
+          <div class="md:w-1/2">
+            <div class="rounded-2xl overflow-hidden shadow-lg">
+              <img src={plombierImg.src} alt="Plombier professionnel au travail" class="w-full h-80 object-cover" />
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+          <div class="md:w-1/2">
+            <h2 class="font-heading text-2xl md:text-3xl font-bold mb-6">Nos certifications</h2>
+            <p class="text-steel leading-relaxed mb-6">
+              Votre sécurité et votre confort sont notre priorité. Nous maintenons
+              les certifications les plus exigeantes du métier.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div class="bg-white rounded-xl p-4 text-center shadow-sm border border-mist-dark">
+                <p class="font-heading font-bold text-sky text-lg mb-1">RGE</p>
+                <p class="text-steel text-xs">Reconnu Garant Environnement</p>
+              </div>
+              <div class="bg-white rounded-xl p-4 text-center shadow-sm border border-mist-dark">
+                <p class="font-heading font-bold text-sky text-lg mb-1">PG</p>
+                <p class="text-steel text-xs">Professionnel du Gaz</p>
+              </div>
+              <div class="bg-white rounded-xl p-4 text-center shadow-sm border border-mist-dark">
+                <p class="font-heading font-bold text-sky text-lg mb-1">Décennale</p>
+                <p class="text-steel text-xs">Assurance garantie 10 ans</p>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <div class="rounded-2xl overflow-hidden shadow-lg">
+              <img src={chantierImg.src} alt="Chantier de plomberie en cours" class="w-full h-80 object-cover" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-mist-dark py-16 md:py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="font-heading text-3xl md:text-4xl font-bold">Nos valeurs</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center p-8">
+            <div class="w-16 h-16 bg-sky/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-sky" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+              </svg>
+            </div>
+            <h3 class="font-heading text-xl font-bold mb-3">Réactivité</h3>
+            <p class="text-steel text-sm leading-relaxed">Intervention rapide, devis sous 24h. En cas d'urgence, nous sommes disponibles 24h/24.</p>
+          </div>
+          <div class="text-center p-8">
+            <div class="w-16 h-16 bg-sky/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-sky" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+            </div>
+            <h3 class="font-heading text-xl font-bold mb-3">Transparence</h3>
+            <p class="text-steel text-sm leading-relaxed">Devis détaillé avant intervention, pas de surprise. Vous savez exactement ce que vous payez.</p>
+          </div>
+          <div class="text-center p-8">
+            <div class="w-16 h-16 bg-sky/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <svg class="w-8 h-8 text-sky" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+              </svg>
+            </div>
+            <h3 class="font-heading text-xl font-bold mb-3">Qualité</h3>
+            <p class="text-steel text-sm leading-relaxed">Matériaux de marque, travail soigné, chantier nettoyé. Garanti par notre assurance décennale.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-deep py-16 md:py-20">
+      <div class="max-w-6xl mx-auto px-6">
+        <div class="text-center mb-10">
+          <h2 class="font-heading text-2xl md:text-3xl font-bold text-white">Zone d'intervention</h2>
+          <p class="text-steel mt-2">Grenoble et son agglomération — rayon de 30 km</p>
+        </div>
+        <div id="map" class="w-full h-72 md:h-96 rounded-2xl z-0" role="img" aria-label="Carte de la zone d'intervention autour de Grenoble"></div>
+      </div>
+    </section>
+  </main>
+  <Footer />
+</Layout>
+
+<script is:inline>
+  (function() {
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+    document.head.appendChild(link);
+    var script = document.createElement('script');
+    script.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+    script.onload = function() {
+      var map = L.map('map').setView([45.1885, 5.7245], 12);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        maxZoom: 19,
+      }).addTo(map);
+      L.marker([45.1885, 5.7245]).addTo(map)
+        .bindPopup('Duval Plomberie<br>8 rue des Compagnons, Grenoble')
+        .openPopup();
+    };
+    document.body.appendChild(script);
+  })();
+</script>
